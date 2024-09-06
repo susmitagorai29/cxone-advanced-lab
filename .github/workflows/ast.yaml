@@ -1,3 +1,4 @@
+
 name: Checkmarx AST Scan
 on:
   push:
@@ -14,8 +15,8 @@ jobs:
       - name: Checkmarx AST CLI Action
         uses: checkmarx/ast-github-action@main #Github Action version
         with:
-          project_name: My_DemoCxOne
+          project_name: MyDemoCxOne
           cx_tenant: galactica
-          base_uri: https://deu.ast.checkmarx.net/ 
+          base_uri: https://eu.ast.checkmarx.net/ 
           cx_client_id: ${{ secrets.CLIENT_ID }}
           cx_client_secret: ${{ secrets.SECRET }}
