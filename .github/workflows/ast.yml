@@ -6,8 +6,6 @@ on:
       - main
       - master
       - dev
-    paths-ignore:
-      - 'test/**'
 jobs:
   build:
     runs-on: ubuntu-latest
